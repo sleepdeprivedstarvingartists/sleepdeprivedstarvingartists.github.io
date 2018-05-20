@@ -11,6 +11,7 @@ ul {
     background-color: #E00003;
 }
 
+	
 li {
     float: left;
 }
@@ -50,7 +51,17 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {background-color: #FFFFFF}
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.content {
+  padding: 16px;
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -64,7 +75,7 @@ li.dropdown {
   <li><a href="sleepdeprivedstarvingartists.github.io/about">About Us</a></li>
   <li><a href="sleepdeprivedstarvingartists.github.io/sponsorus">Sponsor Us</a></li>
   <li class="dropdown">
-  <img src="artistlogo.png" width="50" height="45">
+  <img src="C://users/nicolas/desktop/website/photos/artistlogo.png" width="50" height="45">
   <div class="dropdown-content">
       <a href="sleepdeprivedstarvingartists.github.io/theedgeoftheend">The Edge of the End</a>
       <a href="sleepdeprivedstarvingartists.github.io/intheworldoftomorrow">In The World Of Tomorrow</a>
@@ -72,8 +83,6 @@ li.dropdown {
     </div>
   </li>
 </ul>
-
-
 
 </body>
 </html>
