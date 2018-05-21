@@ -3,7 +3,6 @@
 <head>
 <title>Sleep Deprived Starving Artists</title>
 <style>
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -57,12 +56,7 @@ li.dropdown {
   top: 0;
   width: 100%
 }
-.sticky + .content {
-  padding-top: 60px;
-}
-.content {
-  padding: 16px;
-}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -76,7 +70,7 @@ li.dropdown {
   <li><a href="sleepdeprivedstarvingartists.github.io/about">About Us</a></li>
   <li><a href="sleepdeprivedstarvingartists.github.io/sponsorus">Sponsor Us</a></li>
   <li class="dropdown">
-  <img src="artistlogo.png" width="50" height="45">
+  <img src="C://users/nicolas/desktop/website/photos/artistlogo.png" width="50" height="45">
   <div class="dropdown-content">
       <a href="sleepdeprivedstarvingartists.github.io/theedgeoftheend">The Edge of the End</a>
       <a href="sleepdeprivedstarvingartists.github.io/intheworldoftomorrow">In The World Of Tomorrow</a>
@@ -84,60 +78,19 @@ li.dropdown {
     </div>
   </li>
 </ul>
-<p>ad</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>&nbsp;</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-	<p>ad</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>&nbsp;</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>&nbsp;</p>
-<p>sf</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>s</p>
-<p>&nbsp;</p>
-<p>sf</p>
-	
-<style>
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</style>
-	
 </body>
 </html>
+
+
+jQuery(document).scroll(function() {
+    if (jQuery(this).scrollTop() > 175) {
+        jQuery('.menu-secondary-wrap').css({
+           'position': 'fixed',
+           'top': '0',
+           'width': '950px'
+        });
+    } 
+    else {
+        jQuery('.menu-secondary-wrap').css('position','static');
+    }
+});
