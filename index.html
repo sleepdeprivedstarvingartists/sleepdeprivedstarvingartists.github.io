@@ -3,6 +3,18 @@
 <head>
 <title>Sleep Deprived Starving Artists</title>
 <style>
+body {
+  padding-top: 50px;
+}
+
+/* Header span-24, could not find a proper identifier for it */
+.span-24 {
+    position: fixed;
+    z-index: 99;
+    background: #000;
+    top: 0;
+}
+	
 ul {
     list-style-type: none;
     margin: 0;
@@ -82,15 +94,3 @@ li.dropdown {
 </html>
 
 
-jQuery(document).scroll(function() {
-    if (jQuery(this).scrollTop() > 175) {
-        jQuery('.menu-secondary-wrap').css({
-           'position': 'fixed',
-           'top': '0',
-           'width': '950px'
-        });
-    } 
-    else {
-        jQuery('.menu-secondary-wrap').css('position','static');
-    }
-});
