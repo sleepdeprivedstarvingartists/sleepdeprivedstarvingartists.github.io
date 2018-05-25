@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 <title>Sleep Deprived Starving Artists</title>
 <style>
@@ -18,6 +18,17 @@ body {margin:0;padding:0}
   left: 20px;
   width: 1040;
 } 	
+h1 {
+    font-family: times;
+    color: black;
+    size: 200%;
+}
+p {
+    font-family: trebuchet;
+    color: black;
+    size: 100%;
+    padding: 10px;
+}
 ul {
     list-style-type: none;
     margin: 0;
